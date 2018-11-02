@@ -46,6 +46,20 @@ function calculateCurrency(){
         //USE THE TABLE PROVIDED FOR VALUES!!!
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
         var AWG = 1.78511;
+        var BSD = 1.00000;
+        var XBT = 0.00015;
+        var GBP = 0.76826;
+        var CAD = 1.30976;
+        var CLP = 683.205;
+        var CNY = 6.93780;
+        var CUP = 25.0000;
+        var DKK = 6.49079;
+        var EUR = 0.87007;
+        var EGP = 17.8726;
+        var HKD = 7.83955;
+        var IRR = 42000;
+        var NGN = 361.969;
+        var USD = 1.0;
 
          
          
@@ -78,6 +92,149 @@ function calculateCurrency(){
         *********************************************************************************************/
          
          //Calculate the exchange rate and set the country prefix using a selection statement
+         
+        switch (country)
+        {
+        case "Austrialian Dollar" :
+            
+            countryName = "AUD";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Aruban Florin" :
+            
+            countryName = "AWG";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Bahamian Dollar" :
+            
+            countryName = "BSD";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Bitcoin" :
+            
+            countryName = "XBT";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+         
+        case "British Pound" :
+            
+            countryName = "GBP";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Canadian Dollar" :
+            
+            countryName = "CAD";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break
+         
+        case "Chilean Pesso" :
+            
+            countryName = "CLP";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Chinese Yuan Renminibi" :
+            
+            countryName = "CNY";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Cuban Peso" :
+            
+            countryName = "CUP";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Danish Krone" :
+            
+            countryName = "DKK";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Euro" :
+            
+            countryName = "EUR";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+         
+         case "Egyptian Pound" :
+             
+             countryName = "EGP";
+             
+         exchangeRate = usdAmount * countryName;
+          
+        case "Hong Kong Dollar" :
+            
+            countryName = "HKD";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Iranian Rial" :
+            
+            countryName = "IRR";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+          
+        case "Nigerian Naira" :
+            
+            countryName = "NGN";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+         
+        case "United States" :
+            
+            countryName = "USD";
+         
+         exchangeRate = usdAmount * countryName;
+         
+         break;
+
+}
+
+
+
+
+
+
+
+
+
+         
+
+
+
 
 
 
@@ -103,7 +260,7 @@ function calculateCurrency(){
         ***********************************************************************************************/                                                                                                               
 
 
-
+document.getElementById("currencyExchangeInfo").innerHTML = exchangeRate;
 
 
 
